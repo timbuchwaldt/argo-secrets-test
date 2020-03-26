@@ -10,6 +10,7 @@ kind: Ingress
 metadata:
   name: {{ $fullName }}
   labels:
+    foo: {{ .Values.cool_value }}
     {{- include "app.labels" . | nindent 4 }}
   {{- with .Values.ingress.annotations }}
   annotations:
