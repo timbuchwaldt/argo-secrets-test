@@ -7,5 +7,5 @@ metadata:
   resourceVersion: "516"
   uid: b4952dc3-d670-11e5-8cd0-68f728db1985
 data:
-  properties: /
+  properties: |
     {{ toYaml .Values.nested_value | nindent 4 }}
